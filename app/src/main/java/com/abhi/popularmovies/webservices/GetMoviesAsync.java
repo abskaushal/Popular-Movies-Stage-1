@@ -57,7 +57,7 @@ public class GetMoviesAsync extends AsyncTask {
         try {
             Uri buildURI = Uri.parse(BASE_URL).buildUpon().
                     appendQueryParameter(SORT_PARAM, "popularity."+sortOrder).
-                    appendQueryParameter(APIKEY_PARAM, BuildConfig.OPEN_WEATHER_MAP_API_KEY).build();
+                    appendQueryParameter(APIKEY_PARAM, BuildConfig.THE_MOVIE_DB_API_KEY).build();
 
 
             URL url = new URL(buildURI.toString());
